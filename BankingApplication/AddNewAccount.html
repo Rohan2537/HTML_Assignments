@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <style>
+            h1{
+                position: relative;
+                right: 80px;
+                text-align: center;
+                color: blue;
+            }
+        
+            table{
+                  width: 400px;
+                  height: 400px;
+            }
+           div{
+               background-color:lightgray;
+               border-style: ridge;
+               border-color: blue;
+               width: 500px;
+               height: 500px;
+               position: relative;
+               left: 390px;
+            
+           }
+           div1{
+               position: relative;
+               left:160px;
+              top:20px;
+           }
+    </style>
+</head>
+  
+         <body>
+                
+                <h1>New Account Form</h1>
+
+              <div>
+                    <form action="#">
+                            <table  width="400px" style="border-collapse: collapse">
+                                     <tr> 
+                                         <td>&nbsp;&nbsp; Account Holder Name :</td>
+                                         <td> <input type="text" title="Special chars and numbers are not allowed"></td>
+                                     </tr>
+                                     <tr>
+                                         <td>&nbsp;&nbsp; Customer Email Id :</td>
+                                         <td> <input type="text" title="Enter valid email address "></td>
+                       
+                                     </tr>
+                                     <tr>
+                                         <td>&nbsp;&nbsp; Customer DOB :</td>
+                                         <td><input type="date" title="Min 18 years old required"></td>
+                                     </tr>   
+                                     <tr>
+                                         <td>&nbsp;&nbsp;Customer Phone Number :</td>
+                                         <td><input type="number" maxlength="10" title=" Enter a 10 Digit number only"></td>
+                                     </tr>  
+                       
+                                      <tr>
+                                         <td>&nbsp;&nbsp; Account Type :</td> <td> <select>
+                                                                            <option value="">Savings</option>
+                                                                            <option value="">Current</option></select> </td>
+                                      </tr>  
+                   
+              
+                            </table>
+                                    <div1 class="buttonalign">
+                                          <input type="button"  value= &nbsp;"Submit"&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
+                                          <input type="reset"value=&nbsp"Reset"&nbsp>
+                                    </div1>
+    
+                    </form>
+              </div>
+
+          </body>
+</html>
