@@ -6,38 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
     <style>
-        h1{
-            text-align: center;
-            color: blue;
-        }
-        div{
+        .Withdraw{
                background-color:lightgray;
                border-style: ridge;
                border-color: blue;
                position: relative;
-              
+               top: 10px;
                width: 380px;
                height: 100px;
                position: relative;
                left: 520px;
                }
-               table,th,td{
+               table{
                 position: relative;
                 top: 5px;
                 width: 400px;
                 height: 10px;
-                
+            }
+            
+            td{
+                position: relative;
+               left: 10px;
             }
         div1{
                position: relative;
-               left:160px;
-              top:20px;
-           }   
+               top: 20px;
+               left: 140px;
+              
+           }  
+           .Withdraw_body{
+               background-color: bisque;
+               margin-top: -25px;
+               width: 1420px;
+               height: 425px;
+           } 
     </style>
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+ </script>
+ <script>
+      $(function(){
+          $("#header").load("header.html");
+          $("#footer").load("footer.html")
+      });
+  </script>
 </head>
 <body>
-    <h1>Withdrawl Form</h1>
-        <div>
+    <div id="header"> </div>
+    <div class="Withdraw_body">
+    <h1 style=" color: blue">Withdrawl Form</h1>
+        <div class="Withdraw">
           <table  width="200px" height="200px" style="border-collapse: collapse">
             <tr>
                 <td>&nbsp;&nbsp;Account Number :</td>
@@ -49,9 +69,11 @@
             </tr>
             
           </table>
-             <div1 class="buttonalign">
+             <div1 class="buttonalign ">
                 <input type="button"  value= &nbsp;Withdraw&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
              </div1>
        </div>
+       </div>
+       <div id="footer"> </div> 
 </body>
 </html>

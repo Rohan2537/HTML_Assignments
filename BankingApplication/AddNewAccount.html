@@ -6,42 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
     <style>
-            h1{
-                position: relative;
-                right: 80px;
-                text-align: center;
-                color: blue;
-            }
         
             table{
-                  width: 400px;
-                  height: 400px;
+                  position: relative;
+                  left: 15px;
+                  top: 10px;
+                  bottom: 30px;;
+                  width: 350px;
+                  height: 200px;
             }
-           div{
+            tr{
+                position: relative;
+                top:25px;
+               right: 10px;
+            }
+           .div{
+               position: relative;
                background-color:lightgray;
                border-style: ridge;
                border-color: blue;
-               width: 500px;
-               height: 500px;
+               top: 30px;
+               width: 400px;
+               height: 300px;
                position: relative;
-               left: 390px;
+               left: 510px;
             
            }
            div1{
                position: relative;
-               left:160px;
-              top:20px;
+               left:110px;
+               top:20px;
+           }
+           .NewAccount{
+               margin-top: -30px;
+               width: 1440px;
+               height: 420px;
+               background-color: bisque;
            }
     </style>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+</script>
+<script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html")
+        });
+    </script>
 </head>
   
          <body>
-                
-                <h1>New Account Form</h1>
-
-              <div>
+            
+                <div id="header"> </div>
+                <h1 style=" margin-top:-30px;">New Account Form</h1>
+                <div class="NewAccount">
+              <div class="div">
+                   
                     <form action="#">
-                            <table  width="400px" style="border-collapse: collapse">
+                            <table  width="400px"  style="border-collapse: collapse">
                                      <tr> 
                                          <td>&nbsp;&nbsp; Account Holder Name :</td>
                                          <td> <input type="text" title="Special chars and numbers are not allowed"></td>
@@ -69,12 +93,14 @@
               
                             </table>
                                     <div1 class="buttonalign">
-                                          <input type="button"  value= &nbsp;"Submit"&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
-                                          <input type="reset"value=&nbsp"Reset"&nbsp>
+                                          <input type="button"  value= &nbsp;Submit&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
+                                          <input type="reset" value=&nbsp;Reset&nbsp;>
                                     </div1>
     
                     </form>
               </div>
-
+            </div>
+            <div id="footer"> </div>
+            
           </body>
 </html>

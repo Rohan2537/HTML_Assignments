@@ -6,34 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
     <style>
-         h1{
-            position: relative;
-            top: 30px;
-            left: 480px;
-            color: blue;
-            font: 10px;
-        }
-        div{
+        
+       .Login{
                background-color:lightgray;
                border-style: ridge;
                border-color: blue;
                position: relative;
-               top: 20px;
+               top: 15px;
                width: 350px;
                height: 100px;
                position: relative;
-               left: 480px;
+              left: 580px;
                }
                div1{
                position: relative;
-               left:160px;
-              top:20px;
+               left:140px;
+               top:20px;
+           }
+           td{
+            position: relative;
+               top: 4px;
+           }
            }
     </style>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script>
+    $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html")
+    });
+</script>
 </head>
 <body>
-        <h1>NetBanking Login</h1>
-        <div> 
+        <div id="header"> </div>
+        <h1 style="position: relative;left: 30px;right: 20px;">NetBanking Login</h1>
+        <div class="Login"> 
            <form action="#">
                 <table  width="300px" height="50px" style="border-collapse: collapse">
                         <tr>
@@ -47,10 +58,11 @@
                         
               </table>
                      <div1 class="buttonalign">
-                           <input type="button"  value= &nbsp;Login&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
+                           <input type="button"  value= &nbsp;Login&nbsp>&nbsp;&nbsp;&nbsp;
                      </div1>
     
           </form>
         </div>
+        <div id="footer"> </div> 
 </body>
 </html>

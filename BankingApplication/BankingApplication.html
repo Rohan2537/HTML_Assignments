@@ -6,82 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
         <style>
-                a{
-                    text-decoration:none;
+               
+                main{
                     position: relative;
-                    bottom: 20px;
+                    top: 180px;
+                    left: 500px;
+                   
                 }
-                p{
-                    color: blue;
-                }
-                nav{
-                    position: relative;
-                    bottom: 24px;
-                    background-color: bisque;
-                }
-                h1{
-                    text-align: center;
-                    position: relative;
-                    top: 20px;
-                    color:blue;
-                }
-                img{
-                    position: relative;
-                    bottom: 50px;
-                }
-                header{
-                        background-color:lightsteelblue;
-                }
-                footer{
-                       position: relative;
-                       top: 450px;
-                       background-color:lightsteelblue;
-                }
-                section{
-                    position: relative;
-                    top: 420px;
-                    left:1150px;
-                }
-                line{
-                     position: relative;
-                     bottom:25px;
-                }
+              div{
+                  margin: -11px;
+                  width: 1450px;
+                  height: 165px;
+                  background-color: bisque;
+              }
+            
         </style>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+</script>
+<script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html")
+        });
+    </script>
 </head>
 <body>
-        <header>
-            <hr>
-                <h1>The Housing Development Finance Corporation</h1>
-                <img src="https://www.hdfcbank.com/assets/images/logo_hdfcbank.gif" alt="Loading" width="250" height="50" >
-            
-        </header><br>
-        <nav>
-            <a href="">Add New Account &nbsp;|</a>&nbsp; &nbsp; &nbsp;&nbsp; 
-            <a href="">Search Account &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;&nbsp; 
-            <a href="">View Account &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;&nbsp; 
-            <a href="">View All Customers &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;&nbsp;
-            <a href="">Update Customer Details &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;&nbsp;  
-            <a href="">Withdrawl Form &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;&nbsp; 
-            <a href="">Deposit Form &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;&nbsp; 
-            <a href="">Fund Transfer &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;&nbsp;
-            <a href="">Sign in</a>&nbsp; &nbsp; &nbsp;&nbsp; 
-            <line>
-                    <hr>
-            </line>
-
-            
-        </nav>
-        <footer>
-                <hr>
-                <p>Products at a glance</p>
-                <p>© 2018 HDFC Bank Ltd. All rights reserved.
-                <p>Site best viewed in IE7+, Firefox 3.5+, Chrome 3+, Safari 5.0+ at 1024 x 768 pixels resolution.</p>
-                <hr>
-            </footer>
-       <section>
-               <img src="https://www.hdfcbank.com/assets/images/securebanking-logo.png" >
-               <img src="https://www.hdfcbank.com/assets/images/verisign.gif">
-       </section> 
+        
+            <div id="header"></div>
+                    <main>
+                            <img src="images/hdfc-bank-logo.png" width="350" height="200" alt="HDFC">
+                        </main>
+                        <div></div>
+            <div id="footer"></div>
+       
        
               
 </body>
