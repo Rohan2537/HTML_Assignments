@@ -6,63 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
     <style>
-        
-       .Login{
+        .Withdraw{
                background-color:lightgray;
                border-style: ridge;
                border-color: blue;
                position: relative;
-               top: 15px;
-               width: 350px;
+               top: 10px;
+               width: 380px;
                height: 100px;
                position: relative;
-              left: 580px;
+               left: 520px;
                }
-               div1{
+               table{
+                position: relative;
+                top: 5px;
+                width: 400px;
+                height: 10px;
+            }
+            
+            td{
+                position: relative;
+               left: 10px;
+            }
+        div1{
                position: relative;
-               left:140px;
-               top:20px;
-           }
-           td{
-            position: relative;
-               top: 4px;
-           }
-           }
+               top: 20px;
+               left: 140px;
+              
+           }  
+         
     </style>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-</script>
-<script>
-    $(function(){
-        $("#header").load("header.html");
-        $("#footer").load("footer.html")
-    });
-</script>
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+ </script>
+ <script>
+      $(function(){
+          $("#header").load("header.html");
+          $("#footer").load("footer.html")
+      });
+  </script>
+         <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div id="header"> </div>
-        <h1 style="position: relative;left: 30px;right: 20px;">NetBanking Login</h1>
-        <div class="Login"> 
-           <form action="#">
-                <table  width="300px" height="50px" style="border-collapse: collapse">
-                        <tr>
-                            <td>&nbsp;&nbsp;Email/Cust Id :</td>
-                            <td><input type="text" ></td>   
-                        </tr>
-                        <tr>
-                            <td>&nbsp;&nbsp;Password :</td>
-                            <td><input type="number"></td>
-                        </tr>
-                        
-              </table>
-                     <div1 class="buttonalign">
-                           <input type="button"  value= &nbsp;Login&nbsp>&nbsp;&nbsp;&nbsp;
-                     </div1>
-    
-          </form>
-        </div>
-        <div id="footer"> </div> 
+    <div id="header"> </div>
+    <div class="Banking">
+    <h1 style=" color: blue">Internet Banking Login</h1>
+        <div class="Withdraw">
+          <table  width="200px" height="200px" style="border-collapse: collapse">
+            <tr>
+                <td>&nbsp;&nbsp;User Id :</td>
+                <td><input type="text" readonly></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;Password :</td>
+                <td><input type="text"></td>
+            </tr>
+            
+          </table>
+             <div1 class="buttonalign ">
+                <input type="button"  value= &nbsp;Submit&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
+             </div1>
+       </div>
+       </div>
+       <div id="footer"> </div> 
 </body>
 </html>
