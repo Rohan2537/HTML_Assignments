@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to HDFC Bank </title>
     <style>
-      
+       
         header{
             border-radius: 3px;
             width: 100%;
@@ -23,96 +23,93 @@
             position: relative;
             bottom: 54px;
         }
- 
+
         .sfSearchWrap {
-             border: 1px solid #005593;
-             background-color: #fff;
-             border-radius: 3px;
-             z-index: 9999;
-             width: 350px;
-             height: 35px;
-             position: relative;
-             left: 980px;
-             top: 60px;
-             border-radius: 5px;
+            border: 1px solid #005593;
+            background-color: #fff;
+            border-radius: 3px;
+            z-index: 9999;
+            width: 350px;
+            height: 35px;
+            position: relative;
+            left: 980px;
+            top: 60px;
+            border-radius: 5px;
 }
 
 
         .sf-searchicon {
-             position: relative;
-             border-radius: 5px;
-             height: 100%;
-             left: 310px;
-             width: 40px;
-             background: url(//hbsearch.senseforth.com/images/ic_search_grey.svg) right no-repeat #005593;
+           position: relative;
+           border-radius: 5px;
+           height: 100%;
+           left: 310px;
+           width: 40px;
+           background: url(//hbsearch.senseforth.com/images/ic_search_grey.svg) right no-repeat #005593;
 }
 
         .searchbox {
-            width: 310px;
-            border: none;
-            border-radius: 5px;
-            color: #333;
-            font-size: large;
-            height: 98%;
-            float: left;
+           width: 310px;
+           border: none;
+           border-radius: 5px;
+           color: #333;
+           font-size: large;
+           height: 98%;
+           float: left;
 }
 
-         .greytext {
-             position: relative;
-             top: 30px;
-             font-size: 1.1em;
-             color:blue;
-             padding: 15px 0 0;
+        .greytext {
+           position: relative;
+           top: 30px;
+           font-size: 1.1em;
+           color:blue;
+           padding: 15px 0 0;
 }
 
         p.bestviewed {
-              padding: 15px 0 10px;
-              position: relative;
-              top: 10px;
-              font-size: 1.1em;
-              letter-spacing: .05em;
+           padding: 15px 0 10px;
+           position: relative;
+           top: 10px;
+           font-size: 1.1em;
+           letter-spacing: .05em;
 }
-        .sf_accountnumber{
-            position: relative;
-            top: -80px;
-            left: 490px;
-            border-style: solid;
-            border-color: black;
-            border-radius: 10px;
-            width: 410px;
-            height: 130px;
-            
-        }
-        .sf_account{
-                position: relative;
-                top: 130px;
-                left: 560px
-            }
-        .Bank{
-                margin-top: -80px;
-            }
-         a{
-             text-decoration: none;
-            }
-        
-        table{
-                position: relative;
-                top: 5px;
-                width: 400px;
-                height: 10px;
-            }
-            
-        td{
-                position: relative;
-                top: 30px;
-                left: 520px;
-            }
-        .buttonalign{
-               position: relative;
-               top: 40px;
-               left: 650px;
-              
-           }              
+        a.homeloginbtn {
+           width: 90px;
+           height: 30px;
+           background: #fe1300;
+           border: 1px solid #fe1300;
+           border-radius: 3px;
+           color: #fff;
+           font-size: 1.2em;
+           font-family: open_sanssemibold;
+           float: right;
+           margin-top: 10px;
+           margin-right: 15px;
+           text-align: center;
+           padding: 4px 0 0;
+           box-sizing: border-box;
+           position: relative;
+    
+}
+        a {
+           text-decoration: none;
+}
+        select{
+           border-radius: 5px;
+           margin-top: 10px;
+           margin-left: 15px;
+           width: 200px;
+           height: 30px;
+}
+        .login_wrap{
+           background-color:lightblue;
+           border-radius: 5px;
+           float: left;
+           margin-top: 20px;
+           margin-left: 680px;
+           width: 330px;
+           height: 80px;
+}
+
     </style>
 </head>
 <body style="background-color: rgb(237, 240, 244);">
@@ -129,6 +126,7 @@
             <div class="heading">
                     <h1 style="position:relative; bottom: 20px"> The Housing Development Finance Corporation</h1>
             </div> 
+            
             <nav>
                 <hr >
                 <a href="index.html" >&nbsp;&nbsp;&nbsp;Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
@@ -142,30 +140,33 @@
                 <a href="signin.html" >&nbsp;&nbsp;&nbsp;Sign In &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
                 <hr >
             </nav>   
-             
             
+            <div class="login_adjust">
+                    <div class="login_wrap">
+                        
+                            <select> <option>
+                                <option>NetBanking</option>
+                                <option>CreditCard Login</option>
+                            </option>
+                        </select>
+                        
+                        <a class="homeloginbtn" id="loginsubmit" href="#">LOGIN</a>
+                        <a href="#" style="position:relative; top: 10px; margin-left: 15px"> Forgot IPIN (Password) &nbsp;|</a>  
+                        <a href="#" style="position:relative; top: 10px;">&nbsp;Forgot Customer ID &nbsp; &nbsp; &nbsp;</a>
+                    </div>
+                </div>
+                <img class="front icon" src="images/icon-pl.png" alt="Personal Loan" style="position:relative;bottom:40px; right: 980px; width: 111px; height: 112px;">
+                <img class="front icon" src="images/icon-credit-cards.png" alt="Credit Cards" style="position:relative;bottom:40px; right: 950px; width: 111px; height: 112px;">
+                <img class="front icon" src="images/icon-car-loan.png" alt="Car Loan" style="position:relative;bottom:40px; right: 760px; width: 111px; height: 112px;">
+                <img class="front icon" src="images/icon-demat.png" alt="Forex Card" style=" position:relative;bottom:160px; margin-left: 330px; width: 111px; height: 112px;">
+                <br>
+                <img class="front icon" src="images/icon-forex-card.png" alt="Demat Account" style="position:relative;bottom:160px; margin-left: 30px; margin-top: 20px; width: 111px; height: 112px;">
+                <img class="front icon" src="images/icon-easyemi-coin.png" alt="Personal Loan" style="position:relative;bottom:160px;left: 35px; width: 111px; height: 112px;">
+                <img class="front icon" src="images/icon-savings.png" alt="Easy EMI Durable" style="position:relative;bottom:160px;left: 75px; width: 111px; height: 112px;">
+                <img class="front icon" src="images/product-services.png" alt="Savings Account" style="position:relative;bottom:160px;margin-top: 0px; margin-left: 110px; width: 111px; height: 112px;">
         </header>
-       
-        <h1 style="position: relative; top: 50px; color: blue; text-align: center;">Deposit Form</h1>
-        <div class="Banking">
-                <div class="Withdraw">
-                  <table  width="200px" height="200px" style="border-collapse: collapse">
-                    <tr>
-                        <td>&nbsp;&nbsp;Account Number :</td>
-                        <td><input type="text" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;&nbsp;Amount to Deposit :</td>
-                        <td><input type="text"></td>
-                    </tr>
-                    
-                  </table>
-                     <div class="buttonalign ">
-                        <input type="button"  value= &nbsp;Deposit&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
-                     </div>
-               </div>
-               </div>
-         <div class="sf_accountnumber"></div> 
+
+        <img src="images/7f721c89-42b5-4d90-8c5e-116d98b954e5.jpg"  width="300px" height="260px" style="float: right;margin-right: 5px; position: relative; bottom: 48px; border-color: black; border-radius: 5px"  alt="">
 
         <footer style="position:absolute;bottom:0px;background-color:lightblue;width: 100%; border-radius: 3px" >
             <img src="images/securebanking-logo.png" style="position:relative;float:right; top: 40px; right:160px;" >

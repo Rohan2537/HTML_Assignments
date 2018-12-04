@@ -72,47 +72,55 @@
               font-size: 1.1em;
               letter-spacing: .05em;
 }
-        .sf_accountnumber{
-            position: relative;
-            top: -80px;
-            left: 490px;
-            border-style: solid;
-            border-color: black;
-            border-radius: 10px;
-            width: 410px;
-            height: 130px;
-            
-        }
-        .sf_account{
-                position: relative;
-                top: 130px;
-                left: 560px
-            }
-        .Bank{
-                margin-top: -80px;
-            }
-         a{
-             text-decoration: none;
-            }
-        
+
+        a {
+              text-decoration: none;
+}
+        select{
+              border-radius: 5px;
+              margin-top: 10px;
+              margin-left: 15px;
+              width: 200px;
+              height: 30px;
+}
+
         table{
-                position: relative;
-                top: 5px;
-                width: 400px;
-                height: 10px;
+              position: relative;
+              left: 1px;
+              top: 15px;
+              bottom: 30px;;
+              width: 450px;
+              height: 200px;
             }
-            
-        td{
-                position: relative;
-                top: 30px;
-                left: 520px;
+          
+        tr{
+              position: relative;
+              top:25px;
+              right: 10px;
             }
-        .buttonalign{
+     
+         td{
+              position: relative;
+              left: 20px;
+           }
+        .main{
+               background-color:lightgray;
+               
+               border-style: ridge;
+               border-color:black;
+               border-radius: 10px;
                position: relative;
-               top: 40px;
-               left: 650px;
-              
-           }              
+               top: -10px;
+               width: 400px;
+               height: 250px;
+               position: relative;
+               left: 520px;
+               }  
+        click{
+               position: relative;
+               left:160px;
+               top:20px;
+           }
     </style>
 </head>
 <body style="background-color: rgb(237, 240, 244);">
@@ -127,8 +135,9 @@
 
             <img src="images/logo_hdfcbank.gif" alt="Loading" width="200" height="50" style="position:relative; bottom: 5px; right: 300px;">
             <div class="heading">
-                    <h1 style="position:relative; bottom: 20px"> The Housing Development Finance Corporation</h1>
+                    <h1 style="position:relative; bottom: 20px;"> The Housing Development Finance Corporation</h1>
             </div> 
+            
             <nav>
                 <hr >
                 <a href="index.html" >&nbsp;&nbsp;&nbsp;Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
@@ -145,27 +154,45 @@
              
             
         </header>
-       
-        <h1 style="position: relative; top: 50px; color: blue; text-align: center;">Deposit Form</h1>
-        <div class="Banking">
-                <div class="Withdraw">
-                  <table  width="200px" height="200px" style="border-collapse: collapse">
-                    <tr>
-                        <td>&nbsp;&nbsp;Account Number :</td>
-                        <td><input type="text" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;&nbsp;Amount to Deposit :</td>
-                        <td><input type="text"></td>
-                    </tr>
-                    
-                  </table>
-                     <div class="buttonalign ">
-                        <input type="button"  value= &nbsp;Deposit&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
-                     </div>
-               </div>
-               </div>
-         <div class="sf_accountnumber"></div> 
+        <div class="Banker">
+            <h1 style="margin-top:10px;position:relative;right:  -600px; color: blue">Update Information</h1>
+                        <div class="main">
+                                <form action="#">
+                                                <table  width="500px" height="300px" style="border-collapse: collapse">
+                                                          <tr>
+                                                              <td>&nbsp;&nbsp;Customer Id :</td>
+                                                              <td><input type="number"></td>   
+                                                          </tr>
+                                                          <tr>
+                                                              <td>&nbsp;&nbsp;Customer Name :</td>
+                                                              <td><input type="number"></td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>&nbsp;&nbsp;Account Number :</td>
+                                                              <td><input type="text"></td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>&nbsp;&nbsp;Email Id :</td>
+                                                              <td><input type="number"></td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>&nbsp;&nbsp;Phone No. :</td>
+                                                              <td><input type="number"></td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>&nbsp;&nbsp;Date Of Birth :</td>
+                                                              <td><input type="text"></td>
+                                                          </tr>
+                                                </table>
+                                                <click class="buttonalign">
+                                                    <input type="button"  value= &nbsp;Submit&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
+                                              </click>
+    
+                                </form>
+                        
+                           </div>
+                        </div>
+      
 
         <footer style="position:absolute;bottom:0px;background-color:lightblue;width: 100%; border-radius: 3px" >
             <img src="images/securebanking-logo.png" style="position:relative;float:right; top: 40px; right:160px;" >

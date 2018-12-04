@@ -4,74 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page</title>
+    <title>Welcome to HDFC Bank </title>
     <style>
-        .Withdraw{
-               background-color:lightgray;
-               border-style: ridge;
-               border-color: blue;
-               position: relative;
-               top: 10px;
-               width: 380px;
-               height: 100px;
-               position: relative;
-               left: 520px;
-               }
-               table{
+      
+        header{
+            border-radius: 3px;
+            width: 100%;
+            height: 150px;
+            background-color: lightblue;
+        }
+        .heading{
+            position: relative;
+            left: 280px;
+            bottom: 35px;
+            color: blue;
+        }
+        nav{
+            position: relative;
+            bottom: 54px;
+        }
+ 
+        .sfSearchWrap {
+             border: 1px solid #005593;
+             background-color: #fff;
+             border-radius: 3px;
+             z-index: 9999;
+             width: 350px;
+             height: 35px;
+             position: relative;
+             left: 980px;
+             top: 60px;
+             border-radius: 5px;
+}
+
+
+        .sf-searchicon {
+             position: relative;
+             border-radius: 5px;
+             height: 100%;
+             left: 310px;
+             width: 40px;
+             background: url(//hbsearch.senseforth.com/images/ic_search_grey.svg) right no-repeat #005593;
+}
+
+        .searchbox {
+            width: 310px;
+            border: none;
+            border-radius: 5px;
+            color: #333;
+            font-size: large;
+            height: 98%;
+            float: left;
+}
+
+         .greytext {
+             position: relative;
+             top: 30px;
+             font-size: 1.1em;
+             color:blue;
+             padding: 15px 0 0;
+}
+
+        p.bestviewed {
+              padding: 15px 0 10px;
+              position: relative;
+              top: 10px;
+              font-size: 1.1em;
+              letter-spacing: .05em;
+}
+        .sf_accountnumber{
+            position: relative;
+            top: -80px;
+            left: 490px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 10px;
+            width: 410px;
+            height: 130px;
+            
+        }
+        .sf_account{
+                position: relative;
+                top: 130px;
+                left: 560px
+            }
+        .Bank{
+                margin-top: -80px;
+            }
+         a{
+             text-decoration: none;
+            }
+        
+        table{
                 position: relative;
                 top: 5px;
                 width: 400px;
                 height: 10px;
             }
             
-            td{
+        td{
                 position: relative;
-               left: 10px;
+                top: 30px;
+                left: 520px;
             }
-        div1{
+        .buttonalign{
                position: relative;
-               top: 20px;
-               left: 140px;
+               top: 40px;
+               left: 650px;
               
-           }  
-        
+           }              
     </style>
-      <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous">
- </script>
- <script>
-      $(function(){
-          $("#header").load("header.html");
-          $("#footer").load("footer.html")
-      });
-  </script>
-
-        <link rel="stylesheet" href="style.css">
-
 </head>
-<body>
-    <div id="header"> </div>
-    <div class="Banking">
-    <h1 style=" color: blue">Withdrawl Form</h1>
-        <div class="Withdraw">
-          <table  width="200px" height="200px" style="border-collapse: collapse">
-            <tr>
-                <td>&nbsp;&nbsp;Account Number :</td>
-                <td><input type="text" readonly></td>
-            </tr>
-            <tr>
-                <td>&nbsp;&nbsp;Amount to Withdraw :</td>
-                <td><input type="text"></td>
-            </tr>
+<body style="background-color: rgb(237, 240, 244);">
+    
+        <header > 
+
+                <div class="sfSearchWrap" >
+                    <input type="text" placeholder=" &nbsp;Search" class="searchbox">
+                    <div class="sf-searchicon"></div>
+                    <div class="panel" style="display: none;"></div>
+                </div>
+
+            <img src="images/logo_hdfcbank.gif" alt="Loading" width="200" height="50" style="position:relative; bottom: 5px; right: 300px;">
+            <div class="heading">
+                    <h1 style="position:relative; bottom: 20px"> The Housing Development Finance Corporation</h1>
+            </div> 
             
-          </table>
-             <div1 class="buttonalign ">
-                <input type="button"  value= &nbsp;Withdraw&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
-             </div1>
-       </div>
-       </div>
-       <div id="footer"> </div> 
+            <nav>
+                <hr >
+                <a href="index.html" >&nbsp;&nbsp;&nbsp;Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="AddNewAccount.html" >&nbsp;&nbsp;&nbsp;Add New Account &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="searchAccount.html" >&nbsp;&nbsp;&nbsp;Search Account &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="viewaccount.html" >&nbsp;&nbsp;&nbsp;View Account &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="updatecustomerinfo.html" >&nbsp;&nbsp;&nbsp;Update Customer Information &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="Withdrawform.html" >&nbsp;&nbsp;&nbsp;Withdraw Form &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="depositform.html" >&nbsp;&nbsp;&nbsp;Deposit Form &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="FundTransfer.html" >&nbsp;&nbsp;&nbsp;Fund Transfer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="signin.html" >&nbsp;&nbsp;&nbsp;Sign In &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+                <hr >
+            </nav>   
+              
+            
+        </header>
+       
+        <h1 style="position: relative; top: 50px; color: blue; text-align: center;">Withdrawl Form</h1>
+        <div class="Banking">
+                <div class="Withdraw">
+                  <table  width="200px" height="200px" style="border-collapse: collapse">
+                    <tr>
+                        <td>&nbsp;&nbsp;Account Number :</td>
+                        <td><input type="text" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Amount to Withdraw :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    
+                  </table>
+                     <div class="buttonalign ">
+                        <input type="button"  value= &nbsp;Withdraw&nbsp>&nbsp;&nbsp;&nbsp;&nbsp;
+                     </div>
+               </div>
+               </div>
+         <div class="sf_accountnumber"></div> 
+
+        <footer style="position:absolute;bottom:0px;background-color:lightblue;width: 100%; border-radius: 3px" >
+            <img src="images/securebanking-logo.png" style="position:relative;float:right; top: 40px; right:160px;" >
+            <img src="images/verisign.gif" style="position:relative;float:right; top: 40px; left:50px "> 
+                <p class="greytext" style="margin-left:5px">© 2018 HDFC Bank Ltd. All rights reserved.</p>
+                <p class="bestviewed" style="margin-left:5px">Site best viewed in <a href="http://www.microsoft.com/download/en/details.aspx" alt="This is to inform you that by clicking on the hyperlink, you will be exiting HDFC Bank" title="This is to inform you that by clicking on the hyperlink, you will be exiting HDFC Bank" rel="nofollow" target="_blank">IE7+</a>, <a href="http://www.mozilla.org/en-US/firefox/3.5/releasenotes/" alt="This is to inform you that by clicking on the hyperlink, you will be exiting HDFC Bank" title="This is to inform you that by clicking on the hyperlink, you will be exiting HDFC Bank" rel="nofollow" target="_blank">Firefox 3.5+</a>, <a href="https://www.google.com/chrome/index.html" alt="This is to inform you that by clicking on the hyperlink, you will be exiting HDFC Bank" title="This is to inform you that by clicking on the hyperlink, you will be exiting HDFC Bank" rel="nofollow" target="_blank">Chrome 3+</a>, <a href="http://www.apple.com/safari/download/" alt="This is to inform you that by clicking on the hyperlink, you will be exiting HDFC Bank" title="This is to inform you that by clicking on the hyperlink, you will be exiting HDFC Bank" rel="nofollow" target="_blank">Safari 5.0+</a> at 1024 x 768 pixels resolution.</p>
+                </div>
+                
+        </footer>
+        
+    
 </body>
 </html>

@@ -4,68 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Welcome to HDFC Bank </title>
     <style>
-             a{
-    position: relative;
-    bottom: 5px;
-    text-decoration:none;
-     
- }
-h1{
-    text-align: center;
-    position: relative;
-    top: 20px;
-    color:blue;
-}
-img{
-    position: relative;
-    left: 5px;
-    bottom: 50px;
-}
-nav{
-     position: relative;
-     top:25px;
- }
+       
+        header{
+            border-radius: 3px;
+            width: 100%;
+            height: 150px;
+            background-color: lightblue;
+        }
+        .heading{
+            position: relative;
+            left: 280px;
+            bottom: 35px;
+            color: blue;
+        }
+        nav{
+            position: relative;
+            bottom: 54px;
+        }
 
-line{
-position: relative;
-bottom:25px;
+        .sfSearchWrap {
+            border: 1px solid #005593;
+            background-color: #fff;
+            border-radius: 3px;
+            z-index: 9999;
+            width: 350px;
+            height: 35px;
+            position: relative;
+            left: 980px;
+            top: 60px;
+            border-radius: 5px;
 }
+
+
+        .sf-searchicon {
+           position: relative;
+           border-radius: 5px;
+           height: 100%;
+           left: 310px;
+           width: 40px;
+           background: url(//hbsearch.senseforth.com/images/ic_search_grey.svg) right no-repeat #005593;
+}
+
+        .searchbox {
+           width: 310px;
+           border: none;
+           border-radius: 5px;
+           color: #333;
+           font-size: large;
+           height: 98%;
+           float: left;
+}
+
+    
+   
+        a {
+           text-decoration: none;
+}
+    
+   
     </style>
-     
 </head>
-<body>
-        <header style="background-color: lightsteelblue">
-                <hr>
-                    <h1>The Housing Development Finance Corporation</h1>
-                    <img src="images/logo_hdfcbank.gif" alt="Loading" width="250" height="50" >
-                  
-            <nav>
-                <a style="text-decoration: none" href="BankingApplication.html">&nbsp;&nbsp; Home&nbsp; &nbsp;&nbsp; |</a>
-                <a href="AddNewAccount.html"> New Account &nbsp;&nbsp;&nbsp;|</a>&nbsp; &nbsp; &nbsp;&nbsp;   
-                <a href="searchAccount.html">Search Account &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp; 
-                <a href="viewaccount.html">View Account &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;&nbsp; 
-                <a href="ViewAllCustomers.html">View All Customers &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;
-                <a href="UpdateCustomerForm.html">Update Customer Details &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;
-                <a href="WithdrawForm.html">Withdrawl Form &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp; 
-                <a href="DepositForm.html">Deposit Form &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;
-                <a href="FundTransfer.html">Fund Transfer &nbsp; &nbsp; &nbsp;|</a>&nbsp; &nbsp; &nbsp;
-                <a href="SignIn.html">Sign in</a>&nbsp; &nbsp; &nbsp;
-                <br><br>
-                <line>
-                        <hr>
-                </line>   
-            </nav>
+<body style="background-color: rgb(237, 240, 244);">
+    
+        <header > 
+
+                <div class="sfSearchWrap" >
+                    <input type="text" placeholder=" &nbsp;Search" class="searchbox">
+                    <div class="sf-searchicon"></div>
+                    <div class="panel" style="display: none;"></div>
+                </div>
+
+            <img src="images/logo_hdfcbank.gif" alt="Loading" width="200" height="50" style="position:relative; bottom: 5px; right: 300px;">
+            <div class="heading">
+                    <h1 style="position:relative; bottom: 20px"> The Housing Development Finance Corporation</h1>
+            </div> 
             
-            </header><br>
-            <div id="middle"></div>
-</body>
-</html>
-
-
-
- 
- 
- 
- 
+            <nav>
+                <hr >
+                <a href="index.html" >&nbsp;&nbsp;&nbsp;Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="AddNewAccount.html" >&nbsp;&nbsp;&nbsp;Add New Account &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="searchAccount.html" >&nbsp;&nbsp;&nbsp;Search Account &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="viewaccount.html" >&nbsp;&nbsp;&nbsp;View Account &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="updatecustomerinfo.html" >&nbsp;&nbsp;&nbsp;Update Customer Information &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="Withdrawform.html" >&nbsp;&nbsp;&nbsp;Withdraw Form &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="depositform.html" >&nbsp;&nbsp;&nbsp;Deposit Form &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="FundTransfer.html" >&nbsp;&nbsp;&nbsp;Fund Transfer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</a>
+                <a href="signin.html" >&nbsp;&nbsp;&nbsp;Sign In &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+                <hr >
+            </nav>   
+            
+                </div>
+   
+        </header>
